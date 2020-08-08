@@ -13,8 +13,9 @@ console.log("Hello World!");
 
 /** 2) A first working Express Server */
 app.get('/', (req, res) =>{
-  res.send("Hello Express");
-})
+    let absolutePath = __dirname + "/views/index.html";
+    res.sendFile(absolutePath);
+  })
 
 /** 3) Serve an HTML file */
 
