@@ -1,3 +1,4 @@
+
 var express = require('express');
 var app = express();
 
@@ -8,10 +9,12 @@ var app = express();
 
 
 /** 1) Meet the node console. */
-
+console.log("Hello World!");
 
 /** 2) A first working Express Server */
-
+app.get('/', (req, res) =>{
+  res.send("Hello Express");
+})
 
 /** 3) Serve an HTML file */
 
